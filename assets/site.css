@@ -301,3 +301,21 @@ footer .mor { max-width: 34em; }
   .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
   .reveal.in { opacity: 1; transform: none; }
 }
+
+/* ── Форма оплаты (русская версия) ───────────────── */
+.pay-form { display: grid; gap: 14px; }
+.pay-form label.field { display: grid; gap: 8px; font-size: 14px; color: var(--ash); }
+.pay-form input[type="email"] {
+  width: 100%; min-height: 52px; padding: 0 16px;
+  border-radius: 14px; border: 1px solid var(--vein);
+  background: var(--obsidian); color: var(--marble-high);
+  font: 16px var(--body);
+}
+.pay-form input[type="email"]:focus { outline: none; border-color: var(--gold); }
+.pay-form .agree { display: flex; gap: 10px; align-items: flex-start; font-size: 13.5px; color: var(--marble); }
+.pay-form .agree input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--gold); flex: none; }
+.pay-form .agree a { color: var(--gold); }
+.pay-form .err { min-height: 18px; font-size: 13.5px; color: #FF8A80; }
+.pay-form button.btn { width: 100%; }
+.pay-form button[disabled] { opacity: .55; cursor: not-allowed; }
+.seller { font-size: 13px; color: var(--ash); line-height: 1.6; }
